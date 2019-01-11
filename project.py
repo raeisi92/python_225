@@ -1,3 +1,3 @@
 
 
-print("good by git!")
+print("good1 by git!")
