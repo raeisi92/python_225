@@ -16,11 +16,13 @@
     #   return d
 #print(get_fre("abbas rafte"))
 
-
-
-N=15
-p=''
 import random
-for i in range (N):
-    p += chr(random.randint(97,122))
+
+N = 5
+p=''
+for i in range(N):
+    if random.randint(0,1):
+        p += chr(random.randint(97,122))
+    else:
+        p += chr(random.randint(65,90))
 print(p)
