@@ -12,5 +12,10 @@ print(name1("ali"))
 
 #--------------------------------------------------------------------------
 #3-Convert a long phrase to its acronym
-x=input("Input Your Long Phrase:")
-print(x)
+#x=input("Input Your Long Phrase:")
+#print(x)
+
+
+import string
+l= string.ascii_lowercase
+print(l)

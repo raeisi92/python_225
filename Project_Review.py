@@ -55,5 +55,24 @@ import random
 
 
 
-word =" MR. Mohammad is comming !!".split()
-print(sorted(word,key=len))
+#word =" MR. Mohammad is comming !!".split()
+#print(sorted(word,key=len))
+
+#from collections import defaultdict
+
+#s1="ali reza"
+#s2="ali re za"
+#def anagram(s1,s2):
+#    s1=s1.replace(" ","")
+ #   s2=s2.replace(" ","")
+    #return sorted(s1)==sorted(s2)
+#print(anagram(s1,s2))
+#d = defaultdict(int)
+#for s in s1:
+ #   ds=1
+
+
+d= "محمد رئیسی"
+#print(d.encode())
+c= b'\xd9\x85\xd8\xad\xd9\x85\xd8\xaf \xd8\xb1\xd8\xa6\xdb\x8c\xd8\xb3\xdb\x8c'
+print(c.decode())
