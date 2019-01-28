@@ -2,7 +2,7 @@
 
 #t="ali","rajabi",27
 name,family,age=t
-#print(name)
+print(name)
 
 from collections import defaultdict
 #def get_fre(s):
