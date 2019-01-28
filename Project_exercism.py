@@ -1,6 +1,6 @@
 
 
-#1-Say "Hello, World!" With Python
+1-Say "Hello, World!" With Python
 
 print("Hello, World!")
 #--------------------------------------------------------------------------
@@ -21,7 +21,7 @@ def abbreviate(words):
     return(abbreviation)
 print(abbreviate("The big Man"))
 --------------------------------------
-#3-isogram
+3-isogram
 def is_isogram(string):
     characters = {}
     for char in string:

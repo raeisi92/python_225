@@ -1,10 +1,10 @@
 
 
 #t="ali","rajabi",27
-#name,family,age=t
+name,family,age=t
 #print(name)
 
-#from collections import defaultdict
+from collections import defaultdict
 #def get_fre(s):
 #    d= defaultdict(int)
  #   for c in s:
