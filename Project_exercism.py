@@ -87,3 +87,27 @@ def prime_factors(num):
 
 print(prime_factors(60))
 ------------------------------------
+9
+#https://exercism.io/tracks/python/exercises/nth-prime
+
+def is_prime(num):
+	for n in range(2, num):
+		if num % n == 0:
+			return False
+	else:
+		return True
+
+def nth_prime(positive_number):
+    if positive_number < 1:
+    	raise ValueError("invalid")
+    count = 0
+    num = 2
+    nth = 2
+    while ( count < positive_number):
+    	if is_prime(num):
+    		nth = num
+    		count += 1
+    	num += 1
+    return nth
+-------------------------------------------
+
