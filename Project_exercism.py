@@ -58,3 +58,15 @@ def reverse(text):
     return text[::-1]
 print(reverse("mohammad"))
 --------------------------------------------------------------
+7
+#https://exercism.io/tracks/python/exercises/pangram
+
+def is_pangram(sentence):
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    sentence = sentence.lower()
+    for char in alphabet:
+        if char not in sentence:
+            return False
+
+    return True
+print(is_pangram("The quick brown fox jumps over the lazy dog."))
