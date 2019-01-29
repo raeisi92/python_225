@@ -51,3 +51,10 @@ def is_leap_year(year):
 print(is_leap_year(2020))
 
 ------------------------------------------------------------
+6
+#https://exercism.io/tracks/python/exercises/reverse-string
+
+def reverse(text):
+    return text[::-1]
+print(reverse("mohammad"))
+--------------------------------------------------------------
