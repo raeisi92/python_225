@@ -125,3 +125,14 @@ def pattern_print(letter):
 
     return ''.join([l if l == letter else ' ' for l in pattern]).strip()
 
+-------------------------------------------------
+
+#10
+#https://exercism.io/tracks/python/exercises/two-fer
+
+def two_for(name = "you"):
+    return "One for " + str(name) + ", one for me."
+
+
+print(two_for())
+------------------------------------------
