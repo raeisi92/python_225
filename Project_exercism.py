@@ -110,21 +110,6 @@ def nth_prime(positive_number):
     	num += 1
     return nth
 -------------------------------------------
-def make_diamond(letter):
-
-    if letter not in ascii_uppercase:
-        raise IOError('not a letter')
-    letter_distance = ord(letter) + 1
-    upper_diamond = [pattern_print(chr(i)) for i in range(65, letter_distance)]
-
-    upper_diamond = [line.center(middle_len) for line in upper_diamond]
-    return '\n'.join(upper_diamond + [middle_diamond] + list(reversed(upper_diamond))) + '\n'
-
-
-def pattern_print(letter):
-
-    return ''.join([l if l == letter else ' ' for l in pattern]).strip()
-
 -------------------------------------------------
 
 #10
@@ -135,4 +120,4 @@ def two_for(name = "you"):
 
 
 print(two_for())
-------------------------------------------
+-------------------------------------------
