@@ -70,3 +70,20 @@ def is_pangram(sentence):
 
     return True
 print(is_pangram("The quick brown fox jumps over the lazy dog."))
+---------------------------------------------------------------
+8
+#https://exercism.io/tracks/python/exercises/prime-factors
+
+def prime_factors(num):
+	factors = []
+	for i in range(2, int(num+1)):
+		if num % i == 0:
+			factors.append(i)
+			num /= i
+			break
+	if num != 1:
+		factors += prime_factors(num)
+	return factors
+
+print(prime_factors(60))
+------------------------------------
