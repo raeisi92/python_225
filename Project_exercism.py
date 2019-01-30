@@ -171,3 +171,9 @@ def slices(series, length):
 
 print(slices("56896", 6))
 ---------------------------------------------
+def sum_of_multiples(limit, multiples):
+    return sum(set([m for n in multiples for m in getMultiples(n, limit)]))
+
+def getMultiples(n, limit):
+    if n == 0: return []
+    return [n * factor for factor in range(1, limit) if n * factor < limit]
