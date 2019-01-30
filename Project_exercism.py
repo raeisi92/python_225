@@ -125,7 +125,7 @@ print(two_for())
 from datetime import timedelta
 
 ------------------------------------------
-11
+#11
 #https://exercism.io/tracks/python/exercises/difference-of-squares/solutions
 
 
@@ -154,3 +154,20 @@ def add_gigasecond(moment):
 
 print(add_gigasecond(moment))
 ------------------------------------------------
+12
+#https://exercism.io/tracks/python/exercises/series/
+
+
+def slices(series, length):
+    if length <= 0 or length > len(series):
+        raise ValueError("Series lenght not correct")
+
+    series_list = []
+    for i in range(len(series) - length + 1):
+        series_list.append(series[i: i +length])
+
+    return series_list
+
+
+print(slices("56896", 6))
+---------------------------------------------
