@@ -124,9 +124,33 @@ print(two_for())
 
 from datetime import timedelta
 
+------------------------------------------
+11
+#https://exercism.io/tracks/python/exercises/difference-of-squares/solutions
+
+
+
+def square_of_sum(count):
+    return sum(range(count+1))**2
+
+def sum_of_squares(count):
+    total = 0
+    for i in range(count+1):
+        total += i**2
+    return total
+
+def difference(count):
+    return square_of_sum(count) - sum_of_squares(count)
+
+
+print(difference(10))
+print(square_of_sum(10))
+print(sum_of_squares(10))
+
 
 def add_gigasecond(moment):
     return moment + timedelta(seconds=10 ** 9)
 
 
 print(add_gigasecond(moment))
+------------------------------------------------
